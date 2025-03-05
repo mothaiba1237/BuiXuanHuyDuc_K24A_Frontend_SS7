@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt5</title>
+    <link rel="stylesheet" href="./bt5.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #f5f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.plan-card {
+    width: 100%;
+    max-width: 320px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background: #E31837;
+    color: white;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hot-label {
+    position: absolute;
+    top: -20px;
+    right: -40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transform: rotate(-10deg);
+    font-weight: bold;
+    font-size: 14px;
+    color: #E31837;
+}
+
+.plan-details {
+    padding: 20px;
+}
+
+.detail-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.4;
+}
+
+.detail-item:last-of-type {
+    border-bottom: none;
+}
+
+.detail-label {
+    color: #666;
+}
+
+.detail-value {
+    color: #FF6B00;
+    font-weight: 500;
+}
+
+.usage-note {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.button-group {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #E31837;
+    color: white;
+}
+
+.btn-secondary {
+    background: white;
+    color: #E31837;
+    border: 1px solid #E31837;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+    </style>
+</head>
+<body>
+    <div class="plan-card">
+        <div class="card-header">
+            5G160B
+            <div class="hot-label"><img src="https://goicuoc5gviettel.net/public/images/icon_giamgia.png" alt=""></div>
+        </div>
+
+        <div class="plan-details">
+            <div class="detail-item">
+                <span class="detail-label">Data:</span>
+                <span class="detail-value">120GB (4Gb/ngày)</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Giá:</span>
+                <span class="detail-value">160.000 đ</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Nội mạng:</span>
+                <span class="detail-value">&lt;10 phút (tối đa 1000 phút/30 ngày)</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Ngoại mạng:</span>
+                <span class="detail-value">100 phút</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Free data:</span>
+                <span class="detail-value">TV360 Basic, 20GB lưu trữ Mybox</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Thời hạn:</span>
+                <span class="detail-value">30 ngày</span>
+            </div>
+        </div>
+
+        <div class="usage-note">(Sử dụng 4GB/ngày)</div>
+
+        <div class="button-group">
+            <a href="#" class="btn btn-primary">ĐĂNG KÝ</a>
+            <a href="#" class="btn btn-secondary">Chi tiết</a>
+        </div>
+    </div>
+</body>
+</html>
